@@ -6,4 +6,6 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+const rootEl = document.querySelector('#container');
+
+rootEl.appendChild(component());
