@@ -2,8 +2,9 @@ import './style.scss';
 
 function component() {
   const element = document.createElement('div');
-
-  element.innerHTML = ['Hello', 'webpack'].join(' ');
+  const person = { name: "John Doe" };
+  const { name } = person; 
+  element.innerHTML = ['Hello', name].join(' ');
 
   return element;
 }
