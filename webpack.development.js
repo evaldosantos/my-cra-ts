@@ -21,6 +21,11 @@ module.exports = merge(
         },
       ],
     },
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'index.html'),
+      }),
+    ],
   },
   common
 );
