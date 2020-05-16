@@ -6,10 +6,6 @@ const common = require('./webpack.common');
 module.exports = merge(
   {
     mode: 'development',
-    output: {
-      filename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'dist'),
-    },
     module: {
       rules: [
         {
@@ -23,7 +19,7 @@ module.exports = merge(
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'index.html'),
+        template: path.resolve(__dirname, '..', 'public', 'index.html'),
       }),
     ],
   },

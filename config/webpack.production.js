@@ -12,7 +12,7 @@ module.exports = merge(
     mode: 'production',
     output: {
       filename: '[name].[contentHash].js',
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, '..', 'build'),
     },
     optimization: {
       minimize: true,
@@ -31,7 +31,7 @@ module.exports = merge(
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'index.html'),
+        template: path.resolve(__dirname, '..', 'public', 'index.html'),
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.development.js",
-    "build": "webpack --config webpack.production.js",
+    "start": "webpack-dev-server --open --config config/webpack.development.js",
+    "build": "webpack --config config/webpack.production.js",
     "test": "jest",
     "format": "prettier --write",
     "lint": "eslint --fix"
