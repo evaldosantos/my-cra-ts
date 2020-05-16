@@ -7,7 +7,7 @@ module.exports = merge(
   {
     mode: 'development',
     output: {
-      filename: 'index.js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     module: {
