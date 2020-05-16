@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 const merge = require('webpack-merge');
 const common = require('./webpack.common');
@@ -28,6 +29,7 @@ module.exports = merge(
         // both options are optional
         filename: 'assets/css/[name].[contentHash].css',
       }),
+      new CleanWebpackPlugin(),
     ],
   },
   common
