@@ -6,8 +6,8 @@ const App = () => {
   const { name } = person; 
 
   return (
-    <div>{ ['Hello', name].join(' ') }</div>
-  )
+    <h1>Webpack + babel + react</h1>
+  ) 
 }
 
 export default App;
