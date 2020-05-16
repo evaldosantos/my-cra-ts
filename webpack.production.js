@@ -26,8 +26,7 @@ module.exports = merge(
       new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
-        filename: '[name].[contentHash].css',
-        chunkFilename: '[id].css',
+        filename: 'assets/css/[name].[contentHash].css',
       }),
     ],
   },
