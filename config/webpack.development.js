@@ -22,6 +22,10 @@ module.exports = merge(
         template: path.resolve(__dirname, '..', 'public', 'index.html'),
       }),
     ],
+    devServer: {
+      historyApiFallback: true,
+      port: 3000,
+    },
   },
   common
 );
