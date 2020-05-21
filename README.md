@@ -12,7 +12,7 @@ Inside the newly created project, you can run some built-in commands:
 ### `npm start`
 
 Runs the app in development mode.<br>
-Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will automatically reload if you make changes to the code.<br>
 You will see the build errors and lint warnings in the console.
