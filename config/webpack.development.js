@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 const path = require('path');
 const merge = require('webpack-merge');
 const common = require('./webpack.common');
@@ -26,6 +27,10 @@ module.exports = merge(
     plugins: [
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, '..', 'public', 'index.html'),
+      }),
+      new Dotenv({
+        path: path.resolve(__dirname, '..', '.env'), // Path to .env file (this is the default)
+        safe: true, // load .env.example (defaults to "false" which does not use dotenv-safe)
       }),
     ],
     devServer: {
