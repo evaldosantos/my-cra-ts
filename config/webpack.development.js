@@ -15,6 +15,12 @@ module.exports = merge(
             'style-loader',
           ],
         },
+        {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: {
+            loader: 'file-loader',
+          },
+        },
       ],
     },
     plugins: [
